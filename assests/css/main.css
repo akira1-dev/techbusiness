@@ -1,0 +1,112 @@
+/*
+
+MAIN COLOR : #007BFF
+ACCENT     :  #00FFFF
+DARK BASE  : #0A0F24
+NEUTRAL    : #CFCFCF
+TEXT       : WHITE
+
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #007BFF;
+}
+.ico {
+    filter: drop-shadow(0px 0px 15px yellow);
+}
+.interface-area {
+    height: 100vh;
+    background: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.interface-area h1 {
+    animation: interfaceH1 3s infinite;
+}
+@keyframes interfaceH1 {
+    0% {
+        text-shadow: 0px 0px 0px #00FFFF, 0px 0px 10px #00FFFF;
+        letter-spacing: 0px;
+    }
+    50% {
+        text-shadow: 2px 4px 0px #CFCFCF, -2px -4px #CFCFCF;
+        letter-spacing: 3px;
+    }
+    100% {
+        text-shadow: 0px 0px 0px #00FFFF, 0px 0px 10px #00FFFF;
+        letter-spacing: 0px;
+    }
+}
+.interface-area h2 {
+    animation: interfaceH2 3s linear infinite;
+}
+@keyframes interfaceH2 {
+    0% {
+        letter-spacing: 0px;
+    }
+    50% {
+        letter-spacing: 1px;
+    }
+    100% {
+        letter-spacing: 0px;
+    }
+}
+.interface-area p {
+    padding: 10px;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+.interface-btn {
+    width: 280px;
+    padding: 10px;
+    font-size: 20px;
+    background: #00FFFF;
+    border: none;
+    color: #0A0F24;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.interface-btn:hover {
+    width: 290px;
+    transform: scale(1.09);
+    box-shadow: 0px 0px 10px #00FFFF;
+}
+header {
+    background: white;
+    margin-bottom: 1cm;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-box {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+footer {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    margin-top: 1cm;
+    text-align: center;
+    color: white;
+}
+footer p {
+    letter-spacing: 3px;
+    font-family: monospace;
+}
