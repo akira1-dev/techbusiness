@@ -1,0 +1,1 @@
+mermain.initialize({ startOnLoad: true });
