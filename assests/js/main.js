@@ -1,1 +1,1 @@
-window.location.href = "issue/issue.htm";
+// window.location.href = "issue/issue.htm";
